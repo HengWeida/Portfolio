@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+/* Our own colors and fonts. Tailwind turns these into classes:
+   --color-brand -> bg-brand, text-brand
+   --font-display -> font-display */
+@theme {
+  --color-base: #141414;  /* page background (Netflix black) */
+  --color-panel: #181818; /* modal and small boxes */
+  --color-brand: #e50914; /* Netflix-style red */
+  --color-muted: #b3b3b3; /* gray text */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--color-base);
+  color: white;
+  font-family: var(--font-body);
+}
+
+/* Hides the scrollbar on the horizontal rows (you can still swipe or use arrows) */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
